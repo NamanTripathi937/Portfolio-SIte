@@ -21,7 +21,10 @@
     padding: 0;
     box-sizing: inherit;
 }
-
+img:hover{
+    transform: scale(1.2);
+    transition : transform 0.3s ease-in-out;
+}
 :root {
     --font-size-small: 1.8rem;
     --font-size-normal: 2.2rem;
@@ -439,6 +442,19 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 /* ----- Work ----- */
 /* --------------------------------------- */
+.skill {  
+    height: 100px; /* Fixed height */  
+    width: 100px; /* Fixed width */  
+    transition: transform 0.3s ease; /* Smooth transition for scaling */  
+}  
+.skill:hover{
+    transform: scale(1.2); /* Scale up on hover */  
+}  
+
+.responsive-image:hover {  
+    width: 250px; /* Width on hover */  
+    height: 200px; /* Height on hover */  
+}  
 
 .work__box {
     display: flex;
@@ -588,6 +604,8 @@ body:not(.user-is-tabbing) a:focus {
     justify-content: center;
     padding: var(--gutter-normal) 0;
     list-style: none;
+    
+    
 }
 
 .footer__social-link-item:not(:last-of-type) {
@@ -596,6 +614,21 @@ body:not(.user-is-tabbing) a:focus {
 
 .footer__social-image {
     height: 4rem;
+    filter:  grayscale(100%) opacity(0.6) ;
+}
+.gfg {
+    height: 5rem;
+    width: 5rem;
+    filter:  grayscale(100%) opacity(0.8) ;
+    display: inline-block;
+    vertical-align: middle;
+}
+.leetcode {
+    height: 4rem;
+    width: 4rem;
+    filter:  grayscale(100%) opacity(0.9) ;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .footer__github-buttons {
